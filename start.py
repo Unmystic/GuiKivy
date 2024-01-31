@@ -26,7 +26,7 @@ class Example(MDApp):
     def build(self):
         self.theme_cls.theme_style = "Light"
         self.theme_cls.primary_palette = "Red"  # "Purple", "Red"
-        return Builder.load_string(KV)
+        return Builder.load_file("start.kv")
 
 
 Example().run()
