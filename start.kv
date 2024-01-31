@@ -3,93 +3,113 @@
 MDScreen:
     md_bg_color: (211/255, 1, 222/255, 1)
 
-    BoxLayout:
-        orientation: 'horizontal'
-        padding : 10
+
+    MDBoxLayout:
+        orientation: 'vertical'
         spacing : 5
 
-
-        MDButton:
-            theme_bg_color: "Custom"
-            md_bg_color: (85/255, 170/255, 127/255, 1)
-            style: "tonal"
-            height: "50dp"
-            theme_width: "Custom"
-            size_hint_x: .20  
-            theme_shadow_color: "Custom"
-            shadow_color: "white"
+        MDBoxLayout:
+            padding : 10
 
 
-            MDButtonText:
-                pos_hint: {"center_x": .5, "center_y": .5}
-                text: "New League"
-                theme_font_name: "Custom"
-                font_name: "segoeprint_bold.ttf"
-                theme_font_size: "Custom"
-                font_size: "16sp"
-                theme_text_color: "Custom"
-                text_color: "black"
+            
+
+            FitImage:
+                source: "animals_soccer.png"
+            
+                pos_hint: {"top": 1}
+          
+
+
+        MDBoxLayout:
+            orientation: 'horizontal'
+            padding : 10
+            spacing : 5
+            height: self.minimum_height
+            size_hint: 1, 0.1
+
+
+            MDButton:
+                theme_bg_color: "Custom"
+                md_bg_color: (85/255, 170/255, 127/255, 1)
+                style: "tonal"
+                height: "50dp"
+                theme_width: "Custom"
+                size_hint_x: .20  
+                theme_shadow_color: "Custom"
+                shadow_color: "white"
+
+
+                MDButtonText:
+                    pos_hint: {"center_x": .5, "center_y": .5}
+                    text: "New League"
+                    theme_font_name: "Custom"
+                    font_name: "segoeprint_bold.ttf"
+                    theme_font_size: "Custom"
+                    font_size: "16sp"
+                    theme_text_color: "Custom"
+                    text_color: "black"
+            
+            MDButton:
+                theme_bg_color: "Custom"
+                md_bg_color: (85/255, 170/255, 127/255, 1)
+                style: "tonal"
+                height: "50dp"
+                theme_width: "Custom"
+                size_hint_x: .20  
+                theme_shadow_color: "Custom"
+                shadow_color: "white"
+
+
+                MDButtonText:
+                    pos_hint: {"center_x": .5, "center_y": .5}
+                    text: "Hall of Fame"
+                    theme_font_name: "Custom"
+                    font_name: "segoeprint_bold.ttf"
+                    theme_font_size: "Custom"
+                    font_size: "16sp"
+                    theme_text_color: "Custom"
+                    text_color: "black"
         
-        MDButton:
-            theme_bg_color: "Custom"
-            md_bg_color: (85/255, 170/255, 127/255, 1)
-            style: "tonal"
-            height: "50dp"
-            theme_width: "Custom"
-            size_hint_x: .20  
-            theme_shadow_color: "Custom"
-            shadow_color: "white"
+            MDButton:
+                theme_bg_color: "Custom"
+                md_bg_color: (85/255, 170/255, 127/255, 1)
+                style: "tonal"
+                height: "50dp"
+                theme_width: "Custom"
+                size_hint_x: .2   
+                theme_shadow_color: "Custom"
+                shadow_color: "white"
 
 
-            MDButtonText:
-                pos_hint: {"center_x": .5, "center_y": .5}
-                text: "Hall of Fame"
-                theme_font_name: "Custom"
-                font_name: "segoeprint_bold.ttf"
-                theme_font_size: "Custom"
-                font_size: "16sp"
-                theme_text_color: "Custom"
-                text_color: "black"
-       
-        MDButton:
-            theme_bg_color: "Custom"
-            md_bg_color: (85/255, 170/255, 127/255, 1)
-            style: "tonal"
-            height: "50dp"
-            theme_width: "Custom"
-            size_hint_x: .2   
-            theme_shadow_color: "Custom"
-            shadow_color: "white"
+                MDButtonText:
+                    pos_hint: {"center_x": .5, "center_y": .5}
+                    text: "About"
+                    theme_font_name: "Custom"
+                    font_name: "segoeprint_bold.ttf"
+                    theme_font_size: "Custom"
+                    font_size: "16sp"
+                    theme_text_color: "Custom"  
+                    text_color: "black"      
 
-
-            MDButtonText:
-                pos_hint: {"center_x": .5, "center_y": .5}
-                text: "About"
-                theme_font_name: "Custom"
-                font_name: "segoeprint_bold.ttf"
-                theme_font_size: "Custom"
-                font_size: "16sp"
-                theme_text_color: "Custom"  
-                text_color: "black"      
-
-        MDButton:
-            theme_bg_color: "Custom"
-            md_bg_color: (85/255, 170/255, 127/255, 1)
-            style: "tonal"
-            height: "50dp"
-            theme_width: "Custom"
-            size_hint_x: .2   
-            theme_shadow_color: "Custom"
-            shadow_color: "white"
+            MDButton:
+                theme_bg_color: "Custom"
+                md_bg_color: (85/255, 170/255, 127/255, 1)
+                style: "tonal"
+                height: "50dp"
+                theme_width: "Custom"
+                size_hint_x: .2   
+                theme_shadow_color: "Custom"
+                shadow_color: "white"
 
 
 
-            MDButtonText:
-                pos_hint: {"center_x": .5, "center_y": .5}
-                text: "Exit Simulation"
-                theme_font_name: "Custom"
-                font_name: "segoeprint_bold.ttf"
-                theme_font_size: "Custom"
-                font_size: "16sp"
-                theme_text_color: "Custom"
-                text_color: "black"
+                MDButtonText:
+                    pos_hint: {"center_x": .5, "center_y": .5}
+                    text: "Exit Simulation"
+                    theme_font_name: "Custom"
+                    font_name: "segoeprint_bold.ttf"
+                    theme_font_size: "Custom"
+                    font_size: "16sp"
+                    theme_text_color: "Custom"
+                    text_color: "black"
