@@ -2,6 +2,8 @@ from kivy.lang import Builder
 
 from kivymd.app import MDApp
 
+from about import *
+
 KV = '''
 MDScreen:
     md_bg_color: (211/255, 1, 222/255, 1)
@@ -24,9 +26,13 @@ MDScreen:
 
 class Example(MDApp):
     def build(self):
+        
         self.theme_cls.theme_style = "Light"
         self.theme_cls.primary_palette = "Red"  # "Purple", "Red"
         return Builder.load_file("start.kv")
+    
+    def about(self):
+        show_about_dialog(self)
 
 
 Example().run()
